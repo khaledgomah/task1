@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:task1/presentation/color_manager.dart';
+import 'package:task1/presentation/resources/color_manager.dart';
 
 import 'font_manager.dart';
 
