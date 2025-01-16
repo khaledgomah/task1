@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task1/presentation/base/decorated_input_border.dart';
 import 'package:task1/presentation/resources/color_manager.dart';
 import 'package:task1/presentation/resources/font_style_manager.dart';
 import 'package:task1/presentation/resources/values_manager.dart';
@@ -15,44 +16,49 @@ ThemeData getDataTheme() {
     //textButtonTheme
     textButtonTheme: TextButtonThemeData(
       style: TextButton.styleFrom(
+        foregroundColor: ColorManager.white,
         backgroundColor: ColorManager.primary,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(AppSize.s12),
         ),
       ),
     ),
 
     //inputDecorationTheme
     inputDecorationTheme: InputDecorationTheme(
-      contentPadding: EdgeInsets.all(AppPadding.p8),
+      contentPadding: EdgeInsets.all(AppPadding.p16),
       hintStyle: FontStyleManager.textStyle14Medium,
-      focusedBorder: OutlineInputBorder(
-        borderSide: BorderSide(
-          color: ColorManager.primary,
-          width: AppSize.s3,
+      focusedBorder: DecoratedInputBorder(
+        child: OutlineInputBorder(
+          borderSide: BorderSide(color: ColorManager.white),
+          borderRadius: BorderRadius.zero,
         ),
-        borderRadius: BorderRadius.circular(AppSize.s12),
-      ),
-      enabledBorder: OutlineInputBorder(
-        borderSide: BorderSide(
-          color: ColorManager.darkGrey,
-          width: AppSize.s2,
+        shadow: BoxShadow(
+          color: ColorManager.lightGrey.withValues(alpha: AppSize.s0_5),
+          blurRadius: AppSize.s18,
         ),
-        borderRadius: BorderRadius.circular(AppSize.s12),
       ),
-      errorBorder: OutlineInputBorder(
+      enabledBorder: UnderlineInputBorder(
+        borderSide: BorderSide(
+          color: ColorManager.lightGrey,
+          width: AppSize.s1,
+        ),
+      ),
+      errorBorder: UnderlineInputBorder(
         borderSide: BorderSide(
           color: ColorManager.error,
-          width: AppSize.s3,
+          width: AppSize.s1,
         ),
-        borderRadius: BorderRadius.circular(AppSize.s12),
       ),
-      focusedErrorBorder: OutlineInputBorder(
-        borderSide: BorderSide(
-          color: ColorManager.primary,
-          width: AppSize.s3,
+      focusedErrorBorder: DecoratedInputBorder(
+        child: OutlineInputBorder(
+          borderSide: BorderSide(color: ColorManager.white),
+          borderRadius: BorderRadius.zero,
         ),
-        borderRadius: BorderRadius.circular(AppSize.s12),
+        shadow: BoxShadow(
+          color: ColorManager.lightGrey.withValues(alpha: AppSize.s0_5),
+          blurRadius: AppSize.s18,
+        ),
       ),
     ),
   );
