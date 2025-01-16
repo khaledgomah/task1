@@ -24,20 +24,14 @@ class FontStyleManager {
     fontSize: 18,
     fontWeight: FontWeightManager.bold,
   );
-  static TextStyle textStyle16Bold =
-      const TextStyle(fontSize: 16, fontWeight: FontWeightManager.bold);
-  static TextStyle textStyle18Medium = TextStyle(
-      fontSize: 18, fontWeight: FontWeightManager.medium, color: Colors.white);
-  static TextStyle textStyle18SemiBold = const TextStyle(
+  static TextStyle textStyle18Regular = const TextStyle(
     fontSize: 18,
-    fontWeight: FontWeightManager.semiBold,
-  );
-  static TextStyle textStyle20Regular = const TextStyle(
-    fontSize: 20,
+    color: ColorManager.grey,
     fontWeight: FontWeightManager.regular,
   );
-  static TextStyle textStyle30Regular = const TextStyle(
-    fontSize: 30,
-    fontWeight: FontWeightManager.regular,
+
+  static TextStyle textStyle50Bold = const TextStyle(
+    fontSize: 50,
+    fontWeight: FontWeightManager.bold,
   );
 }

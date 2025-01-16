@@ -16,16 +16,18 @@ ThemeData getDataTheme() {
     //textButtonTheme
     textButtonTheme: TextButtonThemeData(
       style: TextButton.styleFrom(
+        padding: EdgeInsets.symmetric(
+            horizontal: AppPadding.p20, vertical: AppPadding.p14),
+        textStyle: FontStyleManager.textStyle18Bold,
         foregroundColor: ColorManager.white,
         backgroundColor: ColorManager.primary,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(AppSize.s12),
-        ),
+        shape: StadiumBorder(),
       ),
     ),
 
     //inputDecorationTheme
     inputDecorationTheme: InputDecorationTheme(
+      labelStyle: FontStyleManager.textStyle14Medium,
       contentPadding: EdgeInsets.all(AppPadding.p16),
       hintStyle: FontStyleManager.textStyle14Medium,
       focusedBorder: DecoratedInputBorder(
