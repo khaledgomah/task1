@@ -32,30 +32,30 @@ ThemeData getDataTheme(){
             focusedBorder: OutlineInputBorder(
               borderSide: BorderSide(
                 color: ColorManager.primary,
-                width: 2,
+                width: AppSize.s3,
               ),
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(AppSize.s12),
             ),
             enabledBorder: OutlineInputBorder(
               borderSide: BorderSide(
-                color: ColorManager.primary,
-                width: 2,
+                color: ColorManager.darkGrey,
+                width: AppSize.s2,
               ),
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(AppSize.s12),
             ),
             errorBorder: OutlineInputBorder(
               borderSide: BorderSide(
                 color: ColorManager.error,
-                width: 2,
+                width: AppSize.s3,
               ),
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(AppSize.s12),
             ),
             focusedErrorBorder: OutlineInputBorder(
               borderSide: BorderSide(
-                color: ColorManager.error,
-                width: 2,
+                color: ColorManager.primary,
+                width: AppSize.s3,
               ),
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(AppSize.s12),
             ),
           ),
         );
