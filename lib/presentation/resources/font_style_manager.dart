@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:task1/presentation/resources/color_manager.dart';
 import 'package:task1/presentation/resources/font_manager.dart';
 
-class FontStyles {
+class FontStyleManager {
   static TextStyle textStyle14Medium = const TextStyle(
     fontSize: 14,
     fontWeight: FontWeightManager.medium,
@@ -24,12 +24,10 @@ class FontStyles {
     fontSize: 18,
     fontWeight: FontWeightManager.bold,
   );
-  static TextStyle textStyle16Bold = const TextStyle(
-      fontSize: 16, fontWeight: FontWeightManager.bold);
+  static TextStyle textStyle16Bold =
+      const TextStyle(fontSize: 16, fontWeight: FontWeightManager.bold);
   static TextStyle textStyle18Medium = TextStyle(
-      fontSize: 18,
-      fontWeight: FontWeightManager.medium,
-      color: Colors.white);
+      fontSize: 18, fontWeight: FontWeightManager.medium, color: Colors.white);
   static TextStyle textStyle18SemiBold = const TextStyle(
     fontSize: 18,
     fontWeight: FontWeightManager.semiBold,
