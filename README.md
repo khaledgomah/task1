@@ -6,7 +6,7 @@
 
 ## Project Structure
 ```
-week1_project/
+week1_project
 ├── lib/
 │   ├── main.dart         # Entry point of the app
 │   ├── login_screen.dart # Login screen UI and logic
