@@ -1,16 +1,19 @@
-# task1
+# Flutter Login Screen
 
-A new Flutter project.
+## Screens
+- Login screen.
+- Home screen.
 
-## Getting Started
+## Project Structure
+```
+week1_project/
+├── lib/
+│   ├── main.dart         # Entry point of the app
+│   ├── login_screen.dart # Login screen UI and logic
+│   └── home_screen.dart  # Home screen UI
+└── pubspec.yaml          # Project dependencies
+```
 
-This project is a starting point for a Flutter application.
+## Login Sceen
+![image](https://github.com/user-attachments/assets/7145e9a4-99ed-46cb-aeac-b356ceba0118)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
