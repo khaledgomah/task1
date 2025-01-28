@@ -5,9 +5,10 @@ GetIt getIt = GetIt.instance;
 Future<void> locatorSetup() async {
   final sharedPreferencesWithCache = await SharedPreferencesWithCache.create(
     cacheOptions: const SharedPreferencesWithCacheOptions(
-      allowList: <String>{'counter'},
+      allowList: <String>{'counter','notes','done_notes'},
     ),
   );
   getIt.registerSingleton<SharedPreferencesWithCache>(
       sharedPreferencesWithCache);
+      
 }

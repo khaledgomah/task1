@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:task1/presentation/base/decorated_input_border.dart';
+import 'package:task1/presentation/common/decorated_input_border.dart';
 import 'package:task1/presentation/resources/color_manager.dart';
 import 'package:task1/presentation/resources/font_style_manager.dart';
 import 'package:task1/presentation/resources/values_manager.dart';

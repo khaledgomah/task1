@@ -26,12 +26,20 @@ class FontStyleManager {
   );
   static TextStyle textStyle18Regular = const TextStyle(
     fontSize: 18,
-    color: ColorManager.grey,
+    fontWeight: FontWeightManager.regular,
+  );
+  static TextStyle textStyle20Regular = const TextStyle(
+    fontSize: 20,
+    color: ColorManager.black,
     fontWeight: FontWeightManager.regular,
   );
 
   static TextStyle textStyle50Bold = const TextStyle(
     fontSize: 50,
+    fontWeight: FontWeightManager.bold,
+  );
+  static TextStyle textStyle30Bold = const TextStyle(
+    fontSize: 30,
     fontWeight: FontWeightManager.bold,
   );
 }
